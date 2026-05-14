@@ -39,6 +39,69 @@
         </form>
         <div id="message" class="hidden"></div>
       </section>
+
+      <section id="account-container">
+        <h3>Teacher Account</h3>
+        <p id="auth-status">Not signed in</p>
+
+        <form id="login-form">
+          <div class="form-group">
+            <label for="username">Username:</label>
+            <input type="text" id="username" required placeholder="mona" />
+          </div>
+          <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" required placeholder="Enter your password" />
+          </div>
+          <button type="submit">Sign In</button>
+          <button type="button" id="logout-button">Sign Out</button>
+        </form>
+
+        <form id="forgot-password-form">
+          <h4>Forgot Password</h4>
+          <div class="form-group">
+            <label for="username-or-email">Username or Email:</label>
+            <input type="text" id="username-or-email" placeholder="mona or mona@mergington.edu" />
+          </div>
+          <button type="submit">Generate Reset Token</button>
+        </form>
+
+        <form id="reset-password-form">
+          <h4>Reset Password</h4>
+          <div class="form-group">
+            <label for="reset-token">Reset Token:</label>
+            <input type="text" id="reset-token" placeholder="Paste token here" />
+          </div>
+          <div class="form-group">
+            <label for="new-password">New Password:</label>
+            <input type="password" id="new-password" placeholder="At least 10 characters" />
+          </div>
+          <button type="submit">Reset Password</button>
+        </form>
+
+        <form id="profile-form">
+          <h4>Profile</h4>
+          <div class="form-group">
+            <label for="profile-full-name">Full Name:</label>
+            <input type="text" id="profile-full-name" />
+          </div>
+          <div class="form-group">
+            <label for="profile-email">Email:</label>
+            <input type="email" id="profile-email" />
+          </div>
+          <div class="form-group">
+            <label for="profile-phone">Phone:</label>
+            <input type="text" id="profile-phone" />
+          </div>
+          <div class="form-group">
+            <label for="profile-avatar-url">Avatar URL:</label>
+            <input type="url" id="profile-avatar-url" />
+          </div>
+          <button type="submit">Save Profile</button>
+        </form>
+
+        <div id="account-message" class="hidden"></div>
+      </section>
     </main>
 
     <footer>
